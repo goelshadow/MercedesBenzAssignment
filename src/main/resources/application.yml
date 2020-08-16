@@ -1,0 +1,5 @@
+spring:
+  config:
+    HERE_API_KEY: LsGcsCMLdS9-atgNDyE5_ZaEwttxNETZuYszlelQ-KA
+    GEO_CODE_URL: https://geocode.search.hereapi.com/v1/geocode?q=
+    DISCOVER_URL: https://discover.search.hereapi.com/v1/discover?at=
