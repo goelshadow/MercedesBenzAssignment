@@ -39,7 +39,8 @@ public class CallHereAPI {
 		DiscoverAPIResponse response = restTemplate.getForObject(url, DiscoverAPIResponse.class);
 		if(null != response && null != response.getItems()) {
 			Collections.sort(response.getItems());
-			response.getItems().subList(3, response.getItems().size()).clear();
+			if(response.getItems().size() > 3) 
+				response.getItems().subList(3, response.getItems().size()).clear();
 		}
 		log.info("Response from dicover for "+place+": "+gson.toJson(response));
 		return response;
