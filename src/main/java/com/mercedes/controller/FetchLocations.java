@@ -22,7 +22,7 @@ public class FetchLocations {
 	
 	public static final Logger log = LogManager.getLogger();
 	
-	@GetMapping("/fetchDetails")
+	/*@GetMapping("/fetchDetails")
 	public Map<String,DiscoverAPIResponse> getLocationDetails(@RequestParam("location") String location) {
 		
 		Map<String,DiscoverAPIResponse> response = null;
@@ -34,5 +34,11 @@ public class FetchLocations {
 		}
 		log.info("Response sent: "+gson.toJson(response));
 		return response;
+	}*/
+	
+	@GetMapping("/")
+	public String test() {
+		log.info("Request received in controller");
+		return "Hello from Spring boot";
 	}
 }
